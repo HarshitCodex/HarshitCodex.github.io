@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=0.70cm, vmargin=0.35cm]{geometry}
+\usepackage[hmargin=0.70cm, vmargin=0.15cm]{geometry}
 
 % Publications
 \usepackage{cite}
@@ -19,7 +19,7 @@
 \usepackage[usenames,dvipsnames]{xcolor} 
 \definecolor{blue}{RGB}{41, 128, 185}
 \definecolor{darkgreen}{RGB}{19, 141, 117}
-\definecolor{darkblue}{057bfa}
+\definecolor{darkblue}{HTML}{057bfa}
 \definecolor{date}{HTML}{666666}
 \definecolor{primary}{HTML}{010000} 
 \definecolor{headings}{HTML}{6A6A6A}
@@ -64,7 +64,7 @@
     \begin{textblock}{60}(155,5)
     \color{date}
     \fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}
-    \fontsize{8pt}{10pt}
+    \fontsize{7pt}{9pt}
     \selectfont Last Updated on \today
     \end{textblock}
 }
@@ -73,7 +73,7 @@
 \newcommand{\namesection}[3]{
 \centering{
 \color{black}
-\fontsize{40pt}{60pt}
+\fontsize{20pt}{30pt}
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]
@@ -81,25 +81,25 @@
 \color{headings}
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
-\vspace{-15pt}
+\vspace{-12pt}
 }
 
 % Section seperators 
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{5pt}}
+\newcommand{\sectionsep}{\vspace{4pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{14pt}{21pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
